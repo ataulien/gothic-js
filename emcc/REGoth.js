@@ -20,8 +20,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'https://github.com/degenerated1123/gothic-js/releases/download/v0.1.51/REGoth.data';
-    var REMOTE_PACKAGE_BASE = 'https://github.com/degenerated1123/gothic-js/releases/download/v0.1.51/REGoth.data';
+    var PACKAGE_NAME = '../../bin/REGoth.data';
+    var REMOTE_PACKAGE_BASE = 'REGoth.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
